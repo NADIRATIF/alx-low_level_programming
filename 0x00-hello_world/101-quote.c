@@ -1,7 +1,7 @@
 /*
  * File: 101-quote.c
- * Auth: nadir atif
- * */
+ * Auth: Nadir ATIF
+ */
 
 #include <unistd.h>
 
