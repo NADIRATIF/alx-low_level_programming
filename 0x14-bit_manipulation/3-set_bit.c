@@ -6,13 +6,13 @@
  * @n: pointer number of i
  * Return: 1 if it worked, or -1 if an error occurred
  */
-int set_bit(unsigned long int *n, unsigned int i)
+int set_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int x;
 
-	if (x > (sizeof(unsigned long int) * 8 - 1))
+	if (index > (sizeof(unsigned long int) * 8 - 1))
 		return (-1);
-	x = 1 << i;
+	x = 1 << index;
 	*n = *n | x;
 
 	return (1);
