@@ -1,11 +1,11 @@
-#include "main.h"
+#include "main"
 
 /**
- * set_bit - the value of a bit to 1 at a given index.
- * @index: starting from 0 of the bit you want to set
- * @n: pointer number of i
- * Return: 1 if it worked, or -1 if an error occurred
- */
+* set_bit - sets the value of a bit to 1 at a given index.
+* @index: the index of the bit you want to set, starting from 0
+* @n: a pointer to the number whose bit you want to set
+* Return: 1 if the bit was successfully set, or -1 if an error occurred
+**/
 int set_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int x;
