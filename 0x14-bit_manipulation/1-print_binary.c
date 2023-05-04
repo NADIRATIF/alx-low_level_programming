@@ -1,18 +1,18 @@
 #include "main.h"
 /**
- * _power - calculate (base and power)
- * @base: base of the exponet
- * @pow: power of the exponet
+ * _pwr - calculate the base and power
+ * @b: base of the exponet
+ * @p: power of the exponet
  * Return: value of base and power
  */
-unsigned long int _power(unsigned int base, unsigned int pow)
+unsigned long int _pwr(unsigned int b, unsigned int p)
 {
 	unsigned long int n;
 	unsigned int x;
 
 	n = 1;
-	for (x = 1; x <= pow; x++)
-		n *= base;
+	for (x = 1; x <= p; x++)
+		n *= b;
 	return (n);
 }
 /**
@@ -26,7 +26,7 @@ void print_binary(unsigned long int n)
 	char f;
 
 	f = 0;
-	d = _power(2, sizeof(unsigned long int) * 8 - 1);
+	d = _pwr(2, sizeof(unsigned long int) * 8 - 1);
 
 	while (d != 0)
 	{
