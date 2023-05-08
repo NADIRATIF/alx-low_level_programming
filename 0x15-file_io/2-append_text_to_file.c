@@ -16,7 +16,7 @@ size_t _strlen(char *str)
 }
 
 /**
- * append_text_to_file - function that appends text 
+ * append_text_to_file - function that appends text
  * at the end of a file.
  * @filename: name of the file
  * @text_content: NULL terminated string to add at the end of the file
